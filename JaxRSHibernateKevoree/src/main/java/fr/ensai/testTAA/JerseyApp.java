@@ -11,9 +11,9 @@ import web.rest.DemoResource;
 @ApplicationPath("")
 public class JerseyApp extends ResourceConfig {  
     public JerseyApp() {
-    	register(DemoResource.class);
-        register(new MyApplicationBinder());
-        //       packages(true, "web.rest");
+    	//register(DemoResource.class);
+     //   register(new MyApplicationBinder());
+     packages(true, "web.rest");
 
     }
 }
